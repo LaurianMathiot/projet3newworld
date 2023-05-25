@@ -16,6 +16,10 @@
     
 }
 
+body {
+    background-color: rgb(39, 39, 39);
+}
+
 
 h1 {
     text-transform: uppercase;
@@ -33,12 +37,13 @@ h2 {
 
 section {
     text-align: center;
-    padding: 3vh 20vw;
+    padding: 3vh 15vw;
+    background-color: white;
 }
 
 .btn {
     padding: 4px 22px;
-    margin: 1vw;
+    margin-top: 1vw;
     background-color: orange;
     color: white;
     border-radius: 2px;
@@ -73,6 +78,10 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+nav ul li a:hover{
+    color: orange;
+}
+
 
 .dispo {
     height: 25vh;
@@ -91,12 +100,81 @@ header .img-container img {
 
 }
 
-
 /* FIN HEADER */
 
-/* DEBUT RESUME */
+/* DEBUT ACTUS */
 
-#resume {
+#actus .container {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 25vw;
+    margin: 0 1vw;
+    text-align: left;
+}
+
+article .img-container {
+    width: 100%;
+    height: 12vh;;
+}
+
+article .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
 }
 
+article h3 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0.5vh 0;
+}
+
+.articletext {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 1vw;
+    height: 15vh;
+}
+
+.articletext :first-child {
+    font-size: 1.1rem;
+    margin-bottom: 1vw;
+}
+
+/* FIN ACTUS */
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    padding: 1vh 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 4vh;
+}
+
+footer .footer-menu ul {
+    display: flex;
+    justify-content: right;
+}
+
+footer li {
+    padding: 0 1.5vw;
+}
+
+footer ul :not(:first-child)  {
+    border-left: 1px solid white;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 0.8rem;
+}
